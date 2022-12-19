@@ -27,6 +27,9 @@
         }
         nav{
             display: flex;
+            justify-content: space-between;
+            padding: 0 24px;
+            border-bottom: 1px solid var(--very-light-pink);
         }
         .icon-menu{
             display: none;
@@ -38,8 +41,11 @@
         .navbar-right ul{
             list-style: none;
             padding: 0;
+            margin: 0;
             margin-top: 24px;
             display: flex;
+            align-items: center;
+            height: 60px;
 
         }
         .navbar-left{
@@ -58,6 +64,37 @@
         .navbar-left ul li a:hover{
             border: 1px solid var(--hospital-green);
             color: var(--hospital-green);
+        }
+        .navbar-email{
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+            margin-right: 12px;
+        }
+        .navbar-shpping-cart div{
+            width: 16px;
+            height: 16px;
+            background-color: var(--hospital-green);
+            border-radius: 50%;
+            font-size: var(--sm);
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top:51px;
+            display: flex;
+
+        }
+
+        @media (max-width: 640px){
+            .icon-menu{
+                display: block;
+            }
+            .navbar-left ul {
+                display: none;
+            }
+            .navbar-email {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -100,7 +137,7 @@
 
         <div class="navbar-right">
             <ul>
-                <li>jhimyjhimy26@gmail.com</li>
+                <li class="navbar-email">jhimyjhimy26@gmail.com</li>
             <li class="navbar-shpping-cart">
                 <img src="/icons/icon_shopping_cart.svg" alt="">
                 <div>2</div>
