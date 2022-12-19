@@ -16,7 +16,11 @@
         --md: 16px;
         --lg: 18px;
       }
+      html{
+        height: 100%;
+      }
       body {
+        height: 100%;
         margin: 0;
         padding: 0;
         font-family: "Quicksand", sans-serif;
@@ -41,6 +45,56 @@
         display: flex;
         flex-direction: column;
       }
+      .shopping-cart  {
+        display: grid;
+        grid-template-columns: auto 1fr auto auto;
+        gap:16px;
+        margin-bottom: 24px;
+        align-items: center;
+      }
+      .shopping-cart figure {
+        margin: 0;
+
+      }
+      .shopping-cart figure img {
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .shopping-cart p:nth-child(2){
+        color: var(--very-light-pink);
+      }
+      .shopping-cart p:nth-child(3){
+        font-size: var(--md);
+        font-weight: bold;
+      }
+      .order{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap:16px;
+        background-color: var(--text-input-field);
+        border-radius: 8px;
+        margin-bottom: 24px;
+        padding: 0 24px;
+      }
+      .order p:nth-child(1){
+        display: flex;
+        flex-direction: column;
+      }
+      .order p:nth-child(2){
+        text-align: end;
+        font-weight: bold;
+      }
+      .order p span:nth-child(1){
+        font-size: var(--md);
+
+        font-weight: bold;
+      }
+      .order p span:nth-child(2){
+        font-size: var(--sm);
+        color: var(--very-light-pink);
+      }
     </style>
   </head>
   <body>
@@ -48,67 +102,70 @@
       <div class="my-order-container">
         <h1 class="title">My orders</h1>
         <div class="my-order-content">
-          <p>
-            <span>04-25-21</span>
-            <span>6 articles</span>
-          </p>
-          <p>$560.00</p>
+          <div class="order">
+            <p>
+              <span>04-25-21</span>
+              <span>6 articles</span>
+            </p>
+            <p>$560.00</p>
+          </div>
+          <div class="shopping-cart">
+            <figure>
+              <img
+                src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt=""
+              />
+            </figure>
+            <p>Bike</p>
+            <p>$30.00</p>
+          </div>
+          <!-- ------ -->
+          <div class="shopping-cart">
+              <figure>
+                <img
+                  src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                />
+              </figure>
+              <p>Bike</p>
+              <p>$30.00</p>
+            </div>
+            <!-- ------ -->
+            <div class="shopping-cart">
+              <figure>
+                <img
+                  src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                />
+              </figure>
+              <p>Bike</p>
+              <p>$30.00</p>
+            </div>
+            <!-- ------ -->
+            <div class="shopping-cart">
+              <figure>
+                <img
+                  src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                />
+              </figure>
+              <p>Bike</p>
+              <p>$30.00</p>
+            </div>
+            <!-- ------ -->
+            <div class="shopping-cart">
+              <figure>
+                <img
+                  src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                />
+              </figure>
+              <p>Bike</p>
+              <p>$30.00</p>
+            </div>
+            <!-- ------ -->
         </div>
-        <div class="shopping-cart">
-          <figure>
-            <img
-              src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-            />
-          </figure>
-          <p>Bike</p>
-          <p>$30.00</p>
-        </div>
-        <!-- ------ -->
-        <div class="shopping-cart">
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt=""
-              />
-            </figure>
-            <p>Bike</p>
-            <p>$30.00</p>
-          </div>
-          <!-- ------ -->
-          <div class="shopping-cart">
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt=""
-              />
-            </figure>
-            <p>Bike</p>
-            <p>$30.00</p>
-          </div>
-          <!-- ------ -->
-          <div class="shopping-cart">
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt=""
-              />
-            </figure>
-            <p>Bike</p>
-            <p>$30.00</p>
-          </div>
-          <!-- ------ -->
-          <div class="shopping-cart">
-            <figure>
-              <img
-                src="https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt=""
-              />
-            </figure>
-            <p>Bike</p>
-            <p>$30.00</p>
-          </div>
-          <!-- ------ -->
+        
       </div>
     </div>
   </body>
